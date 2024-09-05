@@ -1,0 +1,155 @@
+body{
+  margin: 0; /*margin e padding no 0 tiram a margem branca nas laterais do site*/
+  padding: 0;
+  transition: all 1s;
+  width: 100%;
+  height: 100%;
+}
+
+nav{
+    margin: 0 auto;
+    position: absolute; /*fixed trava o menu e desce c a rolagem e absolute deixa travado em cima*/
+    top: 15px;
+    width: 100%; /* tamanho maximo que ele pode chegar quando vai aumentando a janela */
+    min-width: 1200px; /* é o tamanho minimo que vai ficar, aí cria a barra de rolagem, é util pra listas mto grandes */
+    
+}
+
+nav #MenuGeral{
+  max-width: 1480px;
+  margin: 0% auto;     /*tira a margem e centraliza ele c o auto */
+  background-color: black;
+  height: 125px;
+}
+nav ul li:hover{
+  background-color: rgb(107, 107, 107);
+}
+  
+nav ul{  /*PS: a listagem em*/
+    display: flex; /*define a lista como flexível*/
+    flex-direction: row; /* transforma a lista em horizontal*/
+    margin: 0%;
+    padding: 0%;
+}
+
+nav #logo/*# é pra Id*/ img{
+    height: 75px; /*define a altura*/
+    margin: 25px ; /*margem pra tds os lados 25px*/
+    float: left;/*div posicionada pra esquera c a imagem */
+    
+}
+nav#logo{
+  float: left;
+}
+
+nav #logo a{/*talvez precise deletar esse daqui*/
+  /*float:None; */
+  padding: 0;
+}
+    nav #MainMenu{
+        float: right; /*div pra direita com a lista "ul"*/
+    }
+
+    
+#MenuGeral a { 
+    font-size:16px ;
+    padding: 53px 25px 53px 0px; /*tem função de dar espaçamento de 53 px pra cima e pra baixo e 35px direita e esquerda*/
+    text-decoration: none; /*retira o sublinhado*/
+    text-transform: uppercase;/*tranforma a fonte do texto*/
+    transition: all 1s;/*transição ao tirar o mouse*/
+    color: white; 
+    float: left; /*faz reconhecer as limitações da DIV na qual está situado*/
+} 
+
+#MainMenu:hover a {
+    transition: all 1s; /*transição ao colocar o mouse*/
+    color: rgb(231,169,32);
+    text-decoration: line-through; /*ao colocar o mouse terá uma linha no meio dele */
+}
+
+  nav ul li span{
+    float: left;
+    font-size: 11px;
+    color: #868686;
+    margin: 58px 3px 15px 15px;
+    
+  }
+.montserrat, nav ul li a{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+header .slide{
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+div .SlideBar{
+  visibility: visible;
+  background-color:rgb(231,169,32);
+  float: left;
+}
+header{
+  width: 100%;
+  height: 600px;
+}
+header .slide{
+  width: 100%;
+  height: 600px;
+  object-fit: cover; /*atributo pra imagem: como ela se comporta ao diminuir a página; ao diminuir ela n redimensiona, ela corta aos poucos */
+  position: absolute; /*absolute destaca a div e leva ele pro ponto 0 da tela (canto superior esquerdo)*/
+  /*relative vai se sobrepor mas fica na mesma posição que ele estava antes e o destrava*/
+  z-index: -1; /*joga a imagem para trás de outras imagens e itens em 
+  relação a suas sobreposições*/
+}
+header #SlideBar{
+  margin-top:320px;
+  height: 280px;
+  float: left;/**/
+  background-image: url(../img/yellow-bg.png); /**/
+  width: 625px;
+  padding: 0 0 0 60px;/*equivale a um "paragrafo" onde tudo que tem nessa div vai ter uma margem pré pronta,
+  e com ele tem q diminuir a largura se n vai dar errado*/
+}
+
+Header #TextoSlide{
+  color: white;
+  font-family:"Montserrat", sans-serif;
+  font-size: 14px;
+font-weight: 400;
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+header #TituloSlide{
+  font-size: 50px;
+  color: white;
+  font-family:"Montserrat", sans-serif;
+} 
+header #TituloSlide h4{
+  margin: 30px 0;/*o H4 naturalmente já vem pre-configurado com 60 de margem pra tds os lados */
+}
+
+header .Seta{
+float: left;
+}
+header .Direita{
+  margin-left: 20px;
+}
+.Divisor{
+  width: 100%;
+  height: 300px;
+  background-image: url(../img/divider-dark.png);
+  background-repeat: repeat-x; /*ele faz o plano d fundo se repetir só no eixo x(horizontal)*/
+}
+.container{
+  width: 1200px;
+}
+.ContainerIcons{
+display: flex;
+flex-direction: row;
+}
+.ImgContainer{
+  width:113px ;
+  height:142px ;
+}
